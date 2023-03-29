@@ -19,9 +19,7 @@ module.exports = {
 					['~view', path.resolve(__dirname, 'src/view')],
 					['~view/*', path.resolve(__dirname, 'src/view/*')],
 					['~layouts', path.resolve(__dirname, 'src/view/components/layouts')],
-					[
-						'~layouts/*',
-						path.resolve(__dirname, 'src/view/components/layouts/*'),
+					['~layouts/*', path.resolve(__dirname, 'src/view/components/layouts/*'),
 					],
 					['~icons', path.resolve(__dirname, 'src/view/icons')],
 					['~icons/*', path.resolve(__dirname, 'src/view/icons/*')],

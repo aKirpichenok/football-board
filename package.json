@@ -13,7 +13,7 @@
     "lint": "eslint --fix \"./packages/**/*.{js,jsx,ts,tsx,json}\"",
     "format": "prettier --write \"./packages/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },
-  "author": "Evgeny Kirichuk",
+  "author": "Andrey Kirpichonak",
   "license": "ISC",
   "dependencies": {
     "i18next": "^22.4.10",
@@ -82,10 +82,10 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json}": [
+    "packages/**/*.{js,jsx,ts,tsx,json}": [
       "eslint --fix"
     ],
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+    "packages/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write"
     ]
   }
