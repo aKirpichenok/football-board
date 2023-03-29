@@ -41,6 +41,9 @@ jobs:
         with:
           node-version: "16"
 
+      - name: Instal npm
+        run: npm install -g npm @latest
+
       - name: Install dependencies
         run: npm install
 
