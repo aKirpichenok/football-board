@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import Tabs from './tabs/Tabs';
 import styles from './Navigation.module.scss';
 
-const Navigation: React.FC<{ className?: string }> = ({ className }) => {
+export const Navigation: React.FC<{ className?: string }> = ({ className }) => {
 	const { t } = useTranslation('content');
 	const navigate = useNavigate();
 	const location = useLocation();
@@ -56,5 +56,3 @@ const Navigation: React.FC<{ className?: string }> = ({ className }) => {
 		</nav>
 	);
 };
-
-export default Navigation;

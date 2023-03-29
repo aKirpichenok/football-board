@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import styles from './Participate.module.scss';
 
-const Participate = () => {
+export const Participate = () => {
 	const { t } = useTranslation('content');
 
 	return (
@@ -31,5 +31,3 @@ const Participate = () => {
 		</div>
 	);
 };
-
-export default Participate;

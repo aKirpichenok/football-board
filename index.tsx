@@ -1,13 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import App from '~/../packages/src/app/App';
-
 import {
 	registerServiceWorker,
 	unregisterServiceWorker,
 } from './serviceWorkerRegistration.js';
-
 import './i18n';
 import './index.scss';
 
@@ -20,12 +17,7 @@ const enableServiceWorkerValue =
 const shouldInstallServiceWorker =
 	JSON.parse(enableServiceWorkerValue) && enableServiceWorkerStandCondition;
 
-ReactDOM.render(
-	<React.StrictMode>
-		<App />
-	</React.StrictMode>,
-	rootNode
-);
+ReactDOM.createRoot(rootNode).render(<App />);
 
 if (shouldInstallServiceWorker) {
 	registerServiceWorker();

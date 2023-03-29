@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import Portal from '~/../libs/ui/portal/Portal';
+import Portal from 'libs/ui/src/Portal/Portal';
 
 import styles from './Loader.module.scss';
 
