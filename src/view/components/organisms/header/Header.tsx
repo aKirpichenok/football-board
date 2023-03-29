@@ -11,6 +11,7 @@ export const Header: React.FC = () => {
 				<a className={styles.logoLink} href=".">
 					<span className={styles.y}>Y</span>
 					<span className={styles.js}>JS</span>
+					<span>test</span>
 				</a>
 				<ThemeSwitch className={styles.switchStyle} />
 			</div>
