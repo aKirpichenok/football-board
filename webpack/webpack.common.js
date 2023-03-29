@@ -13,7 +13,7 @@ module.exports = (stand) => {
 	const isLocalStand = stand === 'local';
 
 	return {
-		entry: path.resolve(__dirname, '..', './src/index.tsx'),
+		entry: path.resolve(__dirname, '..', './index.tsx'),
 		resolve: {
 			extensions: ['.jsx', '.tsx', '.ts', '.js'],
 			modules: [path.resolve('/'), 'node_modules'],
@@ -156,16 +156,16 @@ module.exports = (stand) => {
 			}),
 			...(!isLocalStand
 				? [
-						new InjectManifest({
-							swSrc: path.resolve(
-								__dirname,
-								'../src',
-								'serviceWorkerManifest.js'
-							),
-							swDest: path.resolve(__dirname, '../build', 'sw.js'),
-							maximumFileSizeToCacheInBytes: 8000000,
-						}),
-				  ]
+					new InjectManifest({
+						swSrc: path.resolve(
+							__dirname,
+							'../src',
+							'serviceWorkerManifest.js'
+						),
+						swDest: path.resolve(__dirname, '../build', 'sw.js'),
+						maximumFileSizeToCacheInBytes: 8000000,
+					}),
+				]
 				: []),
 		],
 	};

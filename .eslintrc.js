@@ -18,24 +18,6 @@ module.exports = {
 					['~app/*', path.resolve(__dirname, 'src/app/*')],
 					['~view', path.resolve(__dirname, 'src/view')],
 					['~view/*', path.resolve(__dirname, 'src/view/*')],
-					['~atoms', path.resolve(__dirname, 'src/view/components/atoms')],
-					['~atoms/*', path.resolve(__dirname, 'src/view/components/atoms/*')],
-					[
-						'~molecules',
-						path.resolve(__dirname, 'src/view/components/molecules'),
-					],
-					[
-						'~molecules/*',
-						path.resolve(__dirname, 'src/view/components/molecules/*'),
-					],
-					[
-						'~organisms',
-						path.resolve(__dirname, 'src/view/components/organisms'),
-					],
-					[
-						'~organisms/*',
-						path.resolve(__dirname, 'src/view/components/organisms/*'),
-					],
 					['~layouts', path.resolve(__dirname, 'src/view/components/layouts')],
 					[
 						'~layouts/*',
