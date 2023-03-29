@@ -1,5 +1,7 @@
 import React from 'react';
+
 import CrashMessage from '~/../libs/ui/crashMessage/CrashMessage';
+
 import AppRoutes from '../../routes/AppRouter';
 import ErrorBoundary from '../../utils/ErrorBoundary/errorBoundary';
 import OnlineStatusProvider from '../../utils/OnlineStatusProvider';

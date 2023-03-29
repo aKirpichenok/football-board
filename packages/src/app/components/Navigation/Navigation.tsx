@@ -4,7 +4,6 @@ import cn from 'classnames';
 import { useTranslation } from 'react-i18next';
 
 import Tabs from './tabs/Tabs';
-
 import styles from './Navigation.module.scss';
 
 const Navigation: React.FC<{ className?: string }> = ({ className }) => {
