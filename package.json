@@ -10,8 +10,8 @@
     "build:analize": "webpack --config webpack/webpack.config.js --env stand=analize",
     "serveBuild": "npx serve build",
     "test": "test",
-    "lint": "eslint --fix \"./packages/src/app/**/*.{js,jsx,ts,tsx,json}\"",
-    "format": "prettier --write \"./packages/src/app/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
+    "lint": "eslint --fix \"./packages/**/*.{js,jsx,ts,tsx,json}\"",
+    "format": "prettier --write \"./packages/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },
   "author": "Evgeny Kirichuk",
   "license": "ISC",
