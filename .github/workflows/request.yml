@@ -42,7 +42,7 @@ jobs:
           node-version: "16"
 
       - name: Instal npm
-        run: npm install -g npm @latest
+        run: npm install -g npm
 
       - name: Install dependencies
         run: npm install
