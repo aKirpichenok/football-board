@@ -21,7 +21,7 @@ export const Loader: React.FC<{
 				clearTimeout(tId);
 			}
 		};
-	}, []);
+	}, [delay]);
 
 	if (!showLoader) {
 		return null;
