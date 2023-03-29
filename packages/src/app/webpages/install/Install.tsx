@@ -5,7 +5,7 @@ import { SuccessIcon } from '../../../../utils/Icons/SuccessIcon';
 
 import styles from './Install.module.scss';
 
-export const Install = () => {
+const Install = () => {
 	const { t } = useTranslation('content');
 
 	const [isCopied, setIsCopied] = useState(false);
@@ -82,3 +82,5 @@ export const Install = () => {
 		</div>
 	);
 };
+
+export default Install;

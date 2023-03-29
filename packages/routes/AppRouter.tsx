@@ -1,7 +1,7 @@
 import React, { lazy } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
-import Main from '~/../packages/src/app/components/Layouts/Main';
+import { Main } from '@./components';
 import LazyRoute from '~/../packages/routes/LazyRoute';
 
 const InstallScreen = lazy(() => import('../src/app/webpages/Install/Install'));

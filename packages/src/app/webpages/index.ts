@@ -1,2 +1,2 @@
-export { Install } from './Install/Install'
-export { Participate } from './Participate/Participate'
+import Install from "./Install/Install"
+import Participate from "./Participate/Participate"

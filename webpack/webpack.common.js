@@ -159,7 +159,7 @@ module.exports = (stand) => {
 					new InjectManifest({
 						swSrc: path.resolve(
 							__dirname,
-							'../src',
+							'..',
 							'serviceWorkerManifest.js'
 						),
 						swDest: path.resolve(__dirname, '../build', 'sw.js'),

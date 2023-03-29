@@ -1,14 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from '~/../packages/src/app/App';
+import ReactDOM from 'react-dom/client';
+import { App } from 'packages/src/app/App';
 import {
 	registerServiceWorker,
 	unregisterServiceWorker,
 } from './serviceWorkerRegistration.js';
 import './i18n';
 import './index.scss';
-
-const rootNode = document.getElementById('root');
 
 const enableServiceWorkerStandCondition = process.env.APP_STAND !== 'local';
 const enableServiceWorkerDefaultValue = 'false';
@@ -17,8 +15,6 @@ const enableServiceWorkerValue =
 const shouldInstallServiceWorker =
 	JSON.parse(enableServiceWorkerValue) && enableServiceWorkerStandCondition;
 
-ReactDOM.createRoot(rootNode).render(<App />);
-
 if (shouldInstallServiceWorker) {
 	registerServiceWorker();
 }
@@ -26,3 +22,8 @@ if (shouldInstallServiceWorker) {
 if (!shouldInstallServiceWorker) {
 	unregisterServiceWorker();
 }
+
+const root = ReactDOM.createRoot(
+	document.getElementById('root') as HTMLElement
+);
+root.render(<App />);
