@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import { OnlineStatusContext } from '~/../packages/utils/OnlineStatusProvider';
-import Portal from '~/../libs/ui/portal/Portal';
+import { Portal } from '@./ui';
 
 import { Footer } from '../Footer/Footer';
 import { Header } from '../Header/Header';
@@ -10,7 +10,7 @@ import { OfflineMessage } from '../OfflineMessage/OfflineMessage';
 
 import styles from './Main.module.scss';
 
-const Main: React.FC = () => {
+export const Main: React.FC = () => {
 	const online = useContext(OnlineStatusContext);
 	const [showOfflineMessage, setShowOfflineMessage] = useState(!online);
 
@@ -35,5 +35,3 @@ const Main: React.FC = () => {
 		</div>
 	);
 };
-
-export default Main;

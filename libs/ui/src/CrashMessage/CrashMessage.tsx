@@ -7,7 +7,7 @@ interface ICrash {
 	click?: (r: string) => void;
 }
 
-const CrashMessage: React.FunctionComponent<ICrash> = ({ click }) => {
+export const CrashMessage: React.FunctionComponent<ICrash> = ({ click }) => {
 	const { t } = useTranslation('content');
 
 	return (
@@ -22,5 +22,3 @@ const CrashMessage: React.FunctionComponent<ICrash> = ({ click }) => {
 		</div>
 	);
 };
-
-export default CrashMessage;

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import CrashMessage from '~/../libs/ui/crashMessage/CrashMessage';
+import { CrashMessage } from '@./ui';
 
 import AppRoutes from '../../routes/AppRouter';
 import ErrorBoundary from '../../utils/ErrorBoundary/errorBoundary';
 import OnlineStatusProvider from '../../utils/OnlineStatusProvider';
 
-const App = () => {
+export const App = () => {
 	return (
 		<OnlineStatusProvider>
 			<ErrorBoundary errorScreen={<CrashMessage />}>
@@ -15,5 +15,3 @@ const App = () => {
 		</OnlineStatusProvider>
 	);
 };
-
-export default App;

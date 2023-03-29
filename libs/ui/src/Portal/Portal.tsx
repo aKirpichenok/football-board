@@ -12,7 +12,7 @@ interface Props {
 	onWrapperClick?: () => void;
 }
 
-const Portal: React.FC<Props> = ({
+export const Portal: React.FC<Props> = ({
 	children,
 	display = false,
 	transparent = false,
@@ -44,5 +44,3 @@ const Portal: React.FC<Props> = ({
 		rootNode
 	);
 };
-
-export default Portal;
