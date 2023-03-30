@@ -1,0 +1,18 @@
+name: Test
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run tests
+        if: "exists('test.js')"
+        run: npm run test
+
+      - name: Check test coverage
+        if: "exists('coverage')"
+        run: npm run test:coverage
