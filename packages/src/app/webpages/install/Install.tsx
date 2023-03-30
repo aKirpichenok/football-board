@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { SuccessIcon } from 'packages/utils/icons/SuccessIcon';
+import { SuccessIcon } from '../../../../utils/icons/SuccessIcon';
 
 import styles from './Install.module.scss';
 
