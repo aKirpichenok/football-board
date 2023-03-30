@@ -12,3 +12,5 @@ jobs:
         run: npm ci
       - name: Run security scan
         uses: Nc0/npm-audit-action@v1.1.1
+        with:
+          level: high

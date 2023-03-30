@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import { OnlineStatusContext } from '~/../packages/utils/OnlineStatusProvider';
+import { OnlineStatusContext } from 'packages/utils/OnlineStatusProvider';
 import { Portal } from '@./ui';
 
 import { Footer } from '../Footer/Footer';
