@@ -9,10 +9,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check if test files exist
+        run: |
+          if ! ls ./test.js &> /dev/null; then
+            echo "No tests found"
+            exit 1
+          fi
+
       - name: Run tests
-        if: "exists('test.js')"
         run: npm run test
 
-      - name: Check test coverage
-        if: "exists('coverage')"
-        run: npm run test:coverage
+      - name: Check if coverage directory exists
+        run: |
+          if ! ls ./coverage &> /dev/null; then
+            echo "No coverage report generated"
+            exit 1
+          fi
