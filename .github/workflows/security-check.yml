@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  security-check:
+  security-checkas:
     runs-on: ubuntu-latest
 
     steps:
