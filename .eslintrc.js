@@ -8,13 +8,13 @@ module.exports = {
 		react: {
 			version: 'detect',
 		},
-		'import/resolver': {
-			alias: {
-				map: [
-				],
-				extensions: ['.tsx', '.ts', '.js', '.jsx', '.json'],
-			},
-		},
+		// 'import/resolver': {
+		// 	alias: {
+		// 		map: [
+		// 		],
+		// 		extensions: ['.tsx', '.ts', '.js', '.jsx', '.json'],
+		// 	},
+		// },
 	},
 	extends: [
 		'plugin:react/recommended',
