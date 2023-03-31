@@ -9,7 +9,7 @@
     "build:prod": "webpack --config webpack/webpack.config.js --env stand=prod",
     "build:analize": "webpack --config webpack/webpack.config.js --env stand=analize",
     "serveBuild": "npx serve build",
-    "test": "test",
+    "test": "node app.test.js",
     "lint": "eslint --fix \"./packages/src/app/**/*.{js,jsx,ts,tsx,json}\"",
     "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "analyze-performance": "webpack --profile --json > stats.json && webpack-bundle-analyzer stats.json"

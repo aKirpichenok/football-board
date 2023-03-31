@@ -15,10 +15,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Check if test files exist
-        run: |
-          ../../app.test.js
-
       - name: Run tests
         run: npm run test
 
