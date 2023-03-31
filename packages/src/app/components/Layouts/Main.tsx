@@ -21,17 +21,15 @@ export const Main: React.FC = () => {
 	}, [online]);
 
 	return (
-		<div className={styles.mainWrapper}>
+		<>
 			<Header />
-			<main className={styles.content}>
-				<div className={styles.routesWrapper}>
-					<Outlet />
-				</div>
+			<main className={styles['main']}>
+				<Outlet />
 			</main>
 			<Footer />
 			<Portal display={showOfflineMessage} onWrapperClick={closeOfflineMessage}>
 				<OfflineMessage onOkClick={closeOfflineMessage} />
 			</Portal>
-		</div>
+		</>
 	);
 };
