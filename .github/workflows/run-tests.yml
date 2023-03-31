@@ -17,10 +17,7 @@ jobs:
 
       - name: Check if test files exist
         run: |
-          if ! ls ./test.js &> /dev/null; then
-            echo "No tests found"
-            exit 1
-          fi
+          ./test.js
 
       - name: Run tests
         run: npm run test
