@@ -66,7 +66,7 @@ module.exports = (stand) => {
 									localIdentContext: path.resolve(
 										__dirname,
 										'..',
-										'./src/view'
+										'./packages/src/app'
 									),
 								},
 								sourceMap: isDevMode,
