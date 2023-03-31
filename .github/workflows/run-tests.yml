@@ -17,7 +17,7 @@ jobs:
 
       - name: Check if test files exist
         run: |
-          ./test.js
+          ../../app.test.js
 
       - name: Run tests
         run: npm run test
