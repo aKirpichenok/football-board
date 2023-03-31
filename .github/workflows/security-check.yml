@@ -11,6 +11,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run security scan
-        uses: football-board/npm-audit-action@v1.3.0
+        uses: npm-audit-action@v1.3.0
         with:
           level: high
