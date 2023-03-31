@@ -34,7 +34,7 @@ export const Portal: React.FC<Props> = ({
 	return ReactDOM.createPortal(
 		<div
 			tabIndex={0}
-			role="button"
+			role="button "
 			onClick={handleWrapperClick}
 			className={cn(styles.container, transparent && styles.transparent)}
 			style={{ zIndex }}
