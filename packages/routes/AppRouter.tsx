@@ -2,11 +2,11 @@ import React, { lazy } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 import { Main } from '@./components';
-import LazyRoute from '~/../packages/routes/LazyRoute';
+import LazyRoute from './LazyRoute';
 
-const InstallScreen = lazy(() => import('../src/app/webpages/Install/Install'));
+const InstallScreen = lazy(() => import('../src/app/webpages/install/Install'));
 const ParticipateScreen = lazy(
-	() => import('../src/app/webpages/Participate/Participate')
+	() => import('../src/app/webpages/participate/Participate')
 );
 
 const AppRoutes: React.FunctionComponent = () => (

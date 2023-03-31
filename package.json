@@ -11,7 +11,8 @@
     "serveBuild": "npx serve build",
     "test": "test",
     "lint": "eslint --fix \"./packages/src/app/**/*.{js,jsx,ts,tsx,json}\"",
-    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "analyze-performance": "webpack --profile --json > stats.json && webpack-bundle-analyzer stats.json"
   },
   "author": "Andrey Kirpichonak",
   "license": "ISC",

@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import { OnlineStatusContext } from '~/../packages/utils/OnlineStatusProvider';
-import { Portal } from '@./ui';
+import { OnlineStatusContext } from '../../../../utils/OnlineStatusProvider';
+import { Portal } from '../../../../../libs/ui/src/Portal/Portal';
 
 import { Footer } from '../Footer/Footer';
 import { Header } from '../Header/Header';
