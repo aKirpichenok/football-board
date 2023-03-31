@@ -1,7 +1,7 @@
-const assert = require('assert');
-
 function add(a, b) {
   return a + b;
 }
 
-assert.strictEqual(add(2, 3), 5, 'add(2, 3) should equal 5');
+test('add function should return the sum of two numbers', () => {
+  expect(add(2, 3)).toBe(5);
+});
