@@ -1,16 +1,16 @@
 name: Security Check
 on:
-  pull_request:
-    branches: [main]
+pull_request:
+branches: [main]
 jobs:
   security-check:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Install dependencies
-        run: npm ci
-      - name: Run security scan
-        uses: npm-audit-action@v1.3.0
-        with:
-          level: high
+    - name: Checkout code
+    uses: actions/checkout@v2
+    - name: Install dependencies
+    run: npm ci
+    - name: Run security scan
+    uses: dawidd6/action-npm-audit@v2.0.0
+      with:
+        args: --level=high
