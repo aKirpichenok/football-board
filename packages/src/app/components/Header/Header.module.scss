@@ -1,4 +1,7 @@
-.headerWrapper {
-	flex: 0 0 auto
+.header {
+	flex: 0 0 auto;
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-between;
 }
 	
