@@ -9,7 +9,7 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "allowSyntheticDefaultImports":true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "target": "ES6",
     "module": "esnext",
     "lib": ["es2017", "dom"],

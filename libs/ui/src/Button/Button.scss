@@ -1,0 +1,102 @@
+$color-for-text: #2F2F2F;
+$color-yellow: #FEDA00;
+$color-blue: #3C55AC;
+$color-white: #FFFFFF;
+
+.button--variant-primary{
+
+  color: $color-for-text;
+  border-radius: 4px;
+  background-color: $color-yellow;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  &:hover{
+    background-color: $color-blue;
+    color: #fff;
+  }
+  &:active{
+    background-color: $color-for-text
+  }
+}
+
+.button--variant-secondary{
+  color: $color-blue;
+  background-color: $color-white;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    color: $color-for-text
+  }
+  &:active{
+    color: $color-yellow
+  }
+  }
+
+.button--variant-tertiary{
+  color: $color-blue;
+  background-color: $color-white;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid $color-blue;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover{
+    color: $color-for-text;
+    border: 1px solid $color-for-text;
+  }
+  &:active{
+    color: $color-yellow;
+    border: 1px solid $color-yellow;
+  }
+  }
+
+.button--height-50px{
+  height: 50px;
+}
+.button--width-343px{
+  width: 343px;
+}
+.button--width-130px{
+  width: 130px;
+}
+.button--width-374px{
+  width: 374px;
+}
+.button--width-187px{
+  width: 187px;
+}
+.button--marginTop-57px{
+  margin-top: 57px;
+}
+.button--marginTop-20px{
+  margin-top: 20px;
+}
+
+.button--marginTop-45px{
+  margin-top: 45px;
+}
+.button--disabled-true{
+  background: #616161;
+  cursor: none;
+}
+
+button:disabled{
+  background: #EBEBEB;
+  color: #B2B2B2;
+  font-size: 16px;
+  font-weight: 600;
+  &:hover{
+    background: #EBEBEB;
+    color: #B2B2B2;
+    cursor: auto;
+  }
+}
